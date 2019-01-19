@@ -57,5 +57,38 @@ Create a program that performs the followings for word strings separated by spac
 
 However, words whose length is 4 or less are not rearranged. Give an appropriate English sentence (eg "I couldn't believe that I could actually understand what I was reading : the phenomenal power of the human mind .") and confirm the execution result.
 
+## Chapter 2: Basics of UNIX commands
+`hightemp.txt` is a file that stores the record of the highest temperature in Japan in tab-delimited format of "prefecture" "point" "℃" "day". Create a program to perform the following processing and execute hightemp.txt as an input file. Furthermore, execute the same process with the UNIX command and check the execution result of the program.
+
+### 10. Count the number of rows
+Count the number of rows. Use the wc command to confirm results.
+
+### 11. Replace tabs with spaces
+Replace one tab space with one space. To confirm, use sed command, tr command, or expand command.
+
+### 12. Save column 1 to col1.txt and column 2 to col2.txt
+Save only the first column of each row to col1.txt, and extract only the second column as col2.txt in a file. To check, use the cut command.
+
+### 13. Merge col1.txt and col2.txt
+Merge col1.txt and col2.txt created in the "12" and create a text file in which the first and second columns of the original file are arranged in tab separator. Use the paste command for confirmation.
+
+### 14. Output N rows from the beginning
+Receive the natural number N by means such as command line argument and display only the first N lines of the input. Use the head command for confirmation.
+
+### 15. Output the last N rows
+Receive the natural number N by means such as command line argument and display only the last N lines of the input. Use the tail command for confirmation.
+
+### 16. Divide the file into N
+Receive the natural number N by means such as command line argument and divide the input file into N by row. Realize the same processing with the split command.
+
+### 17. Different character strings in the first column
+Find the type of string (string of different strings) in the first column. To confirm, use sort, uniq command.
+
+### 18. Sort each row by descending numerical value of column 3
+Arrange each line in the reverse order of the third column number (note: sort the contents of each line without changing it). Use the sort command for confirmation (this problem does not have to match the result when executed with command).
+
+### 19. Find frequency of occurrence of character strings in the first column of each line and arrange them in descending order of appearance frequency
+Find the appearance frequencies of character strings in the first column of each line, and arrange them in descending order of their appearance. To check, use cut, uniq, sort command.
+
 # ToDo
 - [ ] Translate texts in the exercises
